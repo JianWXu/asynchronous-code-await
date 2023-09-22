@@ -37,25 +37,6 @@ $(document).ready(function () {
   });
 });
 
-// $(give_card_btn).on("click", function () {
-//   axios
-//     .get(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=1`)
-//     .then((card) => {
-//       let card_image = card.data.cards[0].image;
-//       card_img.attr("src", card_image);
-//       console.log(card);
-//     })
-//     .catch((err) => console.log(err));
-// });
-
-// async function newDeck(){
-//     $(document).ready(function () {
-//         let deck = await axios.get(CARDBASEURL);
-//         let deck_id = deck.data.deck_id;
-//       });
-// }
-
-// newDeck();
 
 function getCard() {
   $(give_card_btn).on("click", async function () {
